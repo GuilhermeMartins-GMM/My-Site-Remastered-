@@ -356,3 +356,19 @@ footer {
         left: auto;
     }
 }
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.link-arrow {
+    font-size: 16px;
+    color: rgb(136, 146, 176);
+    transition: 0.25s;
+}
+
+.project-link:hover .link-arrow {
+    color: rgb(100, 255, 218);
+}
