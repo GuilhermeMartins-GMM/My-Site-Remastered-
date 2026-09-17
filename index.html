@@ -125,7 +125,7 @@
                     </div>
                 </article>
 
-                <article class="card-base project-card">
+                <article id="guessgame" class="card-base project-card recircle">
                     <span class="accent">02</span>
                     <div>
                         <p class="accent sm-text">INTERACTIVE GAME</p>
@@ -133,9 +133,9 @@
                         <p class="desc">Try to guess the secret number chosen between <strong>1 and 1000</strong>.</p>
                         <div class="tags"><span>JavaScript</span><span>Logic</span><span>DOM</span></div>
                         <div class="game-controls">
-                            <input type="number" id="guess" min="1" max="1000" placeholder="Guess">
+                            <input type="number" id="guess" min="1" max="1000" placeholder="Your guess">
                             <button id="guessButton" onclick="check()">Guess</button>
-                            <button id="newGameButton" onclick="newG()">Reset</button>
+                            <button id="newGameButton" onclick="newG()" style="display: none;">New Game</button>
                         </div>
                         <p id="result" class="accent game-res"></p>
                         <p id="attempts" class="sm-text desc"></p>
@@ -177,21 +177,33 @@
 
         function check() {
             let guess = Number(document.getElementById("guess").value);
-            if (guess < 1 || guess > 1000) return;
+
+            if (guess < 1 || guess > 1000) {
+                document.getElementById("result").textContent = "Between 1 and 1000";
+                return;
+            }
+
             attempts++;
 
             if (guess < number) {
-                document.getElementById("result").textContent = "Higher ↑";
+                document.getElementById("result").textContent = "Higher";
             } else if (guess > number) {
-                document.getElementById("result").textContent = "Lower ↓";
+                document.getElementById("result").textContent = "Lower";
             } else {
-                document.getElementById("result").textContent = "Correct! 🎉";
-                document.getElementById("attempts").textContent = "You got it in " + attempts + " attempts.";
-                document.getElementById("guess").disabled = true;
+                document.getElementById("result").textContent = "Correct!!!";
+                document.getElementById("attempts").textContent = "Attempts: " + attempts;
+
                 document.getElementById("guessButton").style.display = "none";
                 document.getElementById("newGameButton").style.display = "inline-block";
+                document.getElementById("guess").disabled = true;
             }
         }
+
+        document.getElementById("guess").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                check();
+            }
+        });
 
         newG();
     </script>
