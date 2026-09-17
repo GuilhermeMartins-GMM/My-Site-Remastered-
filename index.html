@@ -33,234 +33,143 @@
 
 <body>
 
-    <div class="background-glow"></div>
+    <div id="spotlight" class="spotlight"></div>
 
-    <header class="sidebar flex-col">
-        <div class="logo">
-            <a href="#home">GMM<span class="accent">.</span></a>
-        </div>
+    <div class="container">
+        
+        <header class="left-col">
+            <div>
+                <h1>Guilherme Martins</h1>
+                <h2>Competitive Programmer & Science Enthusiast</h2>
+                <p class="desc">Desenvolvo soluções elegantes para problemas complexos e crio projetos para a web.</p>
 
-        <nav class="flex-col">
-            <a href="#about" class="nav-link"><span class="accent">01</span> About</a>
-            <a href="#work" class="nav-link"><span class="accent">02</span> Projects</a>
-            <a href="#achievements" class="nav-link"><span class="accent">03</span> Achievements</a>
-            <a href="#game" class="nav-link"><span class="accent">04</span> Mini Game</a>
-            <a href="#recommendations" class="nav-link"><span class="accent">05</span> Links</a>
-        </nav>
+                <nav class="nav-menu">
+                    <a href="#about" class="nav-item"><span class="line"></span>ABOUT</a>
+                    <a href="#experience" class="nav-item"><span class="line"></span>EXPERIENCE</a>
+                    <a href="#projects" class="nav-item"><span class="line"></span>PROJECTS</a>
+                </nav>
+            </div>
 
-        <div class="sidebar-bottom flex-col mono-text">
             <div class="socials">
                 <a href="https://github.com/GuilhermeMartins-GMM" target="_blank">GH</a>
                 <a href="https://instagram.com/_gui_mm_/" target="_blank">IG</a>
             </div>
-            <p>© 2026 GMM</p>
-        </div>
-    </header>
+        </header>
 
-    <main>
+        <main class="right-col">
 
-        <section id="home" class="hero flex-col">
-            <p class="mono-text accent">HELLO, I'M</p>
-            <h1>Guilherme<br><span>Martins de Magalhães.</span></h1>
-            <h2>Competitive programmer & science enthusiast.</h2>
-            <p class="desc">I enjoy turning difficult problems into elegant solutions, learning science, and building things.</p>
-            <div class="buttons">
-                <a href="#about" class="btn primary">More about me ↓</a>
-                <a href="#work" class="btn secondary">See my work →</a>
-            </div>
-        </section>
+            <section id="about" class="section">
+                <p>Sou o Guilherme, conhecido como <span class="accent">GMM</span>. Minha jornada começou na programação competitiva e em olimpíadas científicas, onde desenvolvi gosto por resolver problemas difíceis.</p>
+                <p>Hoje combino essa base lógica para construir aplicações web, pequenos jogos e ferramentas interativas.</p>
+            </section>
 
-        <section id="about" class="content-section">
-            <div class="section-title">
-                <span class="accent">01</span>
-                <h2>About Me</h2>
-            </div>
-            <div class="grid-2col">
-                <div class="text-col">
-                    <p class="large-text">I'm Guilherme, but most people know me as <span class="accent">GMM</span>.</p>
-                    <p>I started programming through competitive programming and olympiads. Eventually, I realized that programming could be more than just solving problems — it could also be a way to build things.</p>
-                </div>
-                <div class="side-info flex-col">
-                    <div><span class="mono-text accent">Currently</span><strong>Learning & building</strong></div>
-                    <div><span class="mono-text accent">Interests</span><strong>Programming · Science</strong></div>
-                    <div><span class="mono-text accent">Based in</span><strong>Brazil 🇧🇷</strong></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="work" class="content-section">
-            <div class="section-title">
-                <span class="accent">02</span>
-                <h2>Things I've Built</h2>
-            </div>
-            <div class="list-gap flex-col">
-                <article class="card-base project-card">
-                    <span class="mono-text accent">01</span>
-                    <div>
-                        <p class="mono-text accent sm-text">WEB DEVELOPMENT</p>
-                        <h3>GMM Tab</h3>
-                        <p class="desc">A personal website created to experiment with web development and turn programming skills into interactive projects.</p>
-                        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                        <a href="https://guilhermemartins-gmm.github.io/GMM_Tab/" target="_blank" class="mono-text link">Visit project →</a>
+            <section id="experience" class="section">
+                <h2 class="mobile-header">Medalhas & Trajetória</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2025</span>
+                        <div class="details">
+                            <h3>OBI — Olimpíada Brasileira de Informática 🥇</h3>
+                            <p class="role">Medalha de Ouro</p>
+                            <p class="desc">Programação competitiva e algoritmos avançados em C++.</p>
+                        </div>
                     </div>
-                </article>
 
-                <article class="card-base project-card">
-                    <span class="mono-text accent">02</span>
-                    <div>
-                        <p class="mono-text accent sm-text">JAVASCRIPT</p>
-                        <h3>Guess the Number</h3>
-                        <p class="desc">A small browser game where the player has to discover a randomly generated number between 1 and 1000.</p>
-                        <div class="tags"><span>JavaScript</span><span>Logic</span><span>DOM</span></div>
-                        <a href="#game" class="mono-text link">Try it ↓</a>
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <div class="details">
+                            <h3>OBF — Olimpíada Brasileira de Física 🥈 🥉</h3>
+                            <p class="role">Medalhas de Prata e Bronze</p>
+                            <p class="desc">Resolução de problemas teóricos e experimentais de física.</p>
+                        </div>
                     </div>
-                </article>
-            </div>
-        </section>
 
-        <section id="achievements" class="content-section">
-            <div class="section-title">
-                <span class="accent">03</span>
-                <h2>Achievements</h2>
-            </div>
-            <div class="border-list">
-                <div class="list-item">
-                    <span class="mono-text accent">2025</span>
-                    <div>
-                        <h3>OBI — Gold Medal</h3>
-                        <p class="desc">Brazilian Olympiad in Informatics</p>
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <div class="details">
+                            <h3>OBQJr — Olimpíada Jr. de Química 🥈</h3>
+                            <p class="role">Medalha de Prata</p>
+                            <p class="desc">Conhecimentos fundamentais em química e transformações da matéria.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2023</span>
+                        <div class="details">
+                            <h3>OBMEP — Olimpíada de Matemática 🥈</h3>
+                            <p class="role">Medalha de Prata</p>
+                            <p class="desc">Raciocínio lógico e matemática estrutural.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="list-item">
-                    <span class="mono-text accent">—</span>
-                    <div>
-                        <h3>OBF — Silver & Bronze</h3>
-                        <p class="desc">Brazilian Physics Olympiad</p>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="mobile-header">Projetos</h2>
+
+                <div class="project-card">
+                    <h3>GMM Tab ↗</h3>
+                    <p class="desc">Website pessoal com foco em usabilidade, animações sutis e apresentação de conquistas.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
                 </div>
-                <div class="list-item">
-                    <span class="mono-text accent">—</span>
-                    <div>
-                        <h3>OBQJr — Silver Medal</h3>
-                        <p class="desc">Brazilian Junior Chemistry Olympiad</p>
+
+                <div class="project-card" id="game">
+                    <h3>Guess the Number (Mini Game) ↗</h3>
+                    <p class="desc">Jogo interativo no navegador: adivinhe o número secreto entre 1 e 1000.</p>
+                    
+                    <div class="game-box">
+                        <div class="game-inputs">
+                            <input type="number" id="guess" placeholder="Ex: 500">
+                            <button id="guessBtn" onclick="check()">Tentar</button>
+                            <button id="resetBtn" onclick="newG()" style="display:none;">Novo Jogo</button>
+                        </div>
+                        <p id="result" class="accent game-text"></p>
+                    </div>
+
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>DOM</span>
                     </div>
                 </div>
-                <div class="list-item">
-                    <span class="mono-text accent">—</span>
-                    <div>
-                        <h3>OBMEP — Silver Medal</h3>
-                        <p class="desc">Brazilian Mathematics Olympiad</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="game" class="content-section">
-            <div class="section-title">
-                <span class="accent">04</span>
-                <h2>Something Interactive</h2>
-            </div>
-            <div class="card-base game-box">
-                <p class="mono-text accent sm-text">MINI GAME</p>
-                <h3>Guess the Number</h3>
-                <p class="desc">I'm thinking of a number between <strong>1 and 1000</strong>.</p>
-                <div class="game-controls">
-                    <input type="number" id="guess" min="1" max="1000" placeholder="Your guess">
-                    <button id="guessButton" onclick="check()">Guess</button>
-                    <button id="newGameButton" onclick="newG()" style="display: none;">New Game</button>
-                </div>
-                <p id="result" class="mono-text accent game-res"></p>
-                <p id="attempts" class="mono-text sm-text desc"></p>
-            </div>
-        </section>
-
-        <section id="recommendations" class="content-section">
-            <div class="section-title">
-                <span class="accent">05</span>
-                <h2>Recommendations</h2>
-            </div>
-            <div class="border-list">
-                <a href="https://neps.academy" target="_blank" class="list-item link-item">
-                    <div>
-                        <span class="mono-text accent">01</span>
-                        <h3>Neps Academy</h3>
-                        <p class="desc">Platform for practicing competitive programming.</p>
-                    </div>
-                    <span class="accent">↗</span>
-                </a>
-                <a href="https://breakthroughjuniorchallenge.org/" target="_blank" class="list-item link-item">
-                    <div>
-                        <span class="mono-text accent">02</span>
-                        <h3>Breakthrough Junior Challenge</h3>
-                        <p class="desc">Science competition for explaining complex ideas.</p>
-                    </div>
-                    <span class="accent">↗</span>
-                </a>
-            </div>
-        </section>
-
-        <section class="personal-section">
-            <div class="photo-wrapper">
-                <img src="foto.png" alt="Guilherme Martins de Magalhães">
-            </div>
-            <div>
-                <p class="mono-text accent sm-text">ONE LAST THING</p>
-                <h2>Thanks for<br>stopping by.</h2>
-                <p class="desc">This website is constantly evolving. Just like me.</p>
-                <a href="https://instagram.com/_gui_mm_/" target="_blank" class="btn primary">More about me →</a>
-            </div>
-        </section>
-
-        <footer class="mono-text sm-text">
-            <span>Designed & built by GMM</span>
-            <div class="footer-links">
-                <a href="https://instagram.com/_gui_mm_/" target="_blank">Instagram</a>
-                <a href="#home">Back to top ↑</a>
-            </div>
-        </footer>
-
-    </main>
+        </main>
+    </div>
 
     <script>
-        let number, attempts;
-
-        function newG() {
-            number = Math.floor(Math.random() * 1000) + 1;
-            attempts = 0;
-            document.getElementById("result").textContent = "";
-            document.getElementById("attempts").textContent = "";
-            document.getElementById("guess").value = "";
-            document.getElementById("newGameButton").style.display = "none";
-            document.getElementById("guessButton").style.display = "inline-block";
-            document.getElementById("guess").disabled = false;
-        }
-
-        function check() {
-            let guess = Number(document.getElementById("guess").value);
-            if (guess < 1 || guess > 1000) {
-                document.getElementById("result").textContent = "Choose a number between 1 and 1000.";
-                return;
-            }
-            attempts++;
-            if (guess < number) {
-                document.getElementById("result").textContent = "Higher ↑";
-            } else if (guess > number) {
-                document.getElementById("result").textContent = "Lower ↓";
-            } else {
-                document.getElementById("result").textContent = "Correct!";
-                document.getElementById("attempts").textContent = "You got it in " + attempts + " attempts.";
-                document.getElementById("guessButton").style.display = "none";
-                document.getElementById("newGameButton").style.display = "inline-block";
-                document.getElementById("guess").disabled = true;
-            }
-        }
-
-        document.getElementById("guess").addEventListener("keydown", function(event) {
-            if (event.key === "Enter") check();
+        const spotlight = document.getElementById('spotlight');
+        window.addEventListener('mousemove', (e) => {
+            spotlight.style.left = e.clientX + 'px';
+            spotlight.style.top = e.clientY + 'px';
         });
 
+        let secretNum, attempts;
+        function newG() {
+            secretNum = Math.floor(Math.random() * 1000) + 1;
+            attempts = 0;
+            document.getElementById("result").textContent = "";
+            document.getElementById("guess").value = "";
+            document.getElementById("resetBtn").style.display = "none";
+            document.getElementById("guessBtn").style.display = "inline-block";
+        }
+        function check() {
+            let val = Number(document.getElementById("guess").value);
+            if (!val) return;
+            attempts++;
+            if (val < secretNum) document.getElementById("result").textContent = "Mais alto ↑";
+            else if (val > secretNum) document.getElementById("result").textContent = "Mais baixo ↓";
+            else {
+                document.getElementById("result").textContent = `Acertou em ${attempts} tentativas! 🎉`;
+                document.getElementById("guessBtn").style.display = "none";
+                document.getElementById("resetBtn").style.display = "inline-block";
+            }
+        }
         newG();
     </script>
-
 </body>
 </html>
