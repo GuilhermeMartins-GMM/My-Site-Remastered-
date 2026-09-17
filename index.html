@@ -41,10 +41,9 @@
         </div>
 
         <nav class="flex-col">
-            <a href="#about" class="nav-link"><span class="accent">01</span> About</a>
-            <a href="#achievements" class="nav-link"><span class="accent">02</span> Achievements</a>
-            <a href="#work" class="nav-link"><span class="accent">03</span> Projects</a>
-            <a href="#game" class="nav-link"><span class="accent">04</span> Mini Game</a>
+            <a href="#about" class="nav-link"><span class="nav-indicator"></span><span class="nav-text">ABOUT</span></a>
+            <a href="#achievements" class="nav-link"><span class="nav-indicator"></span><span class="nav-text">ACHIEVEMENTS</span></a>
+            <a href="#work" class="nav-link"><span class="nav-indicator"></span><span class="nav-text">PROJECTS</span></a>
         </nav>
 
         <div class="sidebar-bottom flex-col mono-text">
@@ -71,7 +70,6 @@
 
         <section id="about" class="content-section">
             <div class="section-title">
-                <span class="accent">01.</span>
                 <h2>About Me</h2>
             </div>
             <div class="grid-2col">
@@ -89,7 +87,6 @@
 
         <section id="achievements" class="content-section">
             <div class="section-title">
-                <span class="accent">02.</span>
                 <h2>Achievements</h2>
             </div>
             <div class="border-list">
@@ -126,10 +123,10 @@
 
         <section id="work" class="content-section">
             <div class="section-title">
-                <span class="accent">03.</span>
                 <h2>Projects</h2>
             </div>
             <div class="list-gap flex-col">
+                
                 <article class="card-base project-card">
                     <span class="mono-text accent">01</span>
                     <div>
@@ -140,25 +137,25 @@
                         <a href="https://guilhermemartins-gmm.github.io/GMM_Tab/" target="_blank" class="mono-text link">Visit project →</a>
                     </div>
                 </article>
-            </div>
-        </section>
 
-        <section id="game" class="content-section">
-            <div class="section-title">
-                <span class="accent">04.</span>
-                <h2>Interactive Mini Game</h2>
-            </div>
-            <div class="card-base game-box">
-                <p class="mono-text accent sm-text">GUESSING GAME</p>
-                <h3>Guess the Number</h3>
-                <p class="desc">Try to guess the secret number between <strong>1 and 1000</strong>.</p>
-                <div class="game-controls">
-                    <input type="number" id="guess" min="1" max="1000" placeholder="Guess">
-                    <button id="guessButton" onclick="check()">Guess</button>
-                    <button id="newGameButton" onclick="newG()" style="display: none;">Reset</button>
-                </div>
-                <p id="result" class="mono-text accent game-res"></p>
-                <p id="attempts" class="mono-text sm-text desc"></p>
+                <article class="card-base project-card">
+                    <span class="mono-text accent">02</span>
+                    <div>
+                        <p class="mono-text accent sm-text">INTERACTIVE GAME</p>
+                        <h3>Guess the Number</h3>
+                        <p class="desc">Try to guess the secret number chosen between <strong>1 and 1000</strong>.</p>
+                        <div class="tags"><span>JavaScript</span><span>Logic</span><span>DOM</span></div>
+                        
+                        <div class="game-controls">
+                            <input type="number" id="guess" min="1" max="1000" placeholder="Guess">
+                            <button id="guessButton" onclick="check()">Guess</button>
+                            <button id="newGameButton" onclick="newG()" style="display: none;">Reset</button>
+                        </div>
+                        <p id="result" class="mono-text accent game-res"></p>
+                        <p id="attempts" class="mono-text sm-text desc"></p>
+                    </div>
+                </article>
+
             </div>
         </section>
 
