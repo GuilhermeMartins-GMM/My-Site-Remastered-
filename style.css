@@ -6,7 +6,7 @@
     --gray: #8892b0;
     --green: #64ffda;
     --border: rgba(136, 146, 176, 0.15);
-    --sidebar-w: 250px;
+    --sidebar-w: 280px;
     --font-m: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-mono: "SFMono-Regular", Consolas, monospace;
 }
@@ -52,8 +52,8 @@ body {
 
 .spotlight {
     position: fixed;
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     background: radial-gradient(circle, rgba(100, 255, 218, 0.05) 0%, transparent 80%);
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -67,24 +67,23 @@ body {
     top: 0;
     width: var(--sidebar-w);
     height: 100vh;
-    padding: 50px 30px;
+    padding: 50px 0 50px 50px;
     justify-content: space-between;
-    border-right: 1px solid var(--border);
-    background: rgba(10, 25, 47, 0.85);
-    backdrop-filter: blur(10px);
+    background: transparent;
     z-index: 100;
 }
 
 .logo a {
     color: var(--white-bright);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     font-family: var(--font-mono);
+    letter-spacing: -1px;
 }
 
 .sidebar nav {
-    gap: 12px;
+    gap: 14px;
 }
 
 .nav-link {
@@ -124,8 +123,8 @@ body {
 
 main {
     margin-left: var(--sidebar-w);
-    max-width: 1000px;
-    padding: 0 60px;
+    max-width: 1050px;
+    padding: 0 60px 0 100px;
     position: relative;
     z-index: 1;
 }
@@ -138,7 +137,7 @@ main {
 
 .hero h1 {
     color: var(--white-bright);
-    font-size: clamp(40px, 6vw, 75px);
+    font-size: clamp(40px, 6vw, 72px);
     line-height: 1.1;
     margin: 10px 0 15px;
 }
@@ -148,7 +147,7 @@ main {
 }
 
 .hero h2 {
-    font-size: clamp(18px, 2.5vw, 26px);
+    font-size: clamp(18px, 2.5vw, 24px);
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -353,7 +352,6 @@ footer {
         height: auto;
         padding: 20px;
         flex-direction: row;
-        border-right: none;
         border-bottom: 1px solid var(--border);
     }
 
