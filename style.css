@@ -28,11 +28,6 @@ body {
     font-size: 11px;
 }
 
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
 .spotlight {
     position: fixed;
     width: 650px;
@@ -52,8 +47,8 @@ body {
     height: 100vh;
     padding: 60px 0 60px 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background: transparent;
     z-index: 100;
 }
 
@@ -71,6 +66,8 @@ body {
 }
 
 .sidebar nav {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -98,8 +95,8 @@ main {
 }
 
 .hero {
-    min-height: 85vh;
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
     padding-top: 130px;
     padding-bottom: 40px;
 }
@@ -151,16 +148,14 @@ main {
 }
 
 .side-info {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .side-info div {
     display: flex;
     flex-direction: column;
-}
-
-.list-gap {
-    gap: 30px;
 }
 
 .list-item {
@@ -175,7 +170,16 @@ main {
     font-size: 17px;
 }
 
-.card-base {
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
     background: rgb(17, 34, 64);
     border: 1px solid rgba(136, 146, 176, 0.15);
     border-radius: 4px;
@@ -183,15 +187,9 @@ main {
     transition: 0.3s;
 }
 
-.card-base:hover {
+.project-card:hover {
     transform: translateY(-4px);
     border-color: rgba(100, 255, 218, 0.3);
-}
-
-.project-card {
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    gap: 15px;
 }
 
 .project-card h3 {
@@ -214,7 +212,7 @@ main {
     border-radius: 2px;
 }
 
-.recircle {
+#guessgame {
     background: linear-gradient(
         45deg,
         rgb(7, 141, 112) 0%,
@@ -226,7 +224,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.recircle:hover {
+#guessgame:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -252,7 +250,6 @@ main {
     border-radius: 35px;
     padding: 10px;
     width: 120px;
-    box-sizing: border-box;
     text-align: center;
     background-color: rgb(255, 255, 255);
     color: rgb(10, 25, 47);
@@ -334,7 +331,6 @@ footer {
 
     .hero {
         padding-top: 60px;
-        min-height: auto;
     }
 
     .hero h1 {
