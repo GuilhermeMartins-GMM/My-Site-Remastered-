@@ -25,7 +25,7 @@ body {
 }
 
 .sm-text {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .spotlight {
@@ -260,8 +260,8 @@ main {
     border-radius: 35px;
     padding: 10px 20px;
     cursor: pointer;
-    background-color: rgb(10, 25, 47);
-    color: rgb(100, 255, 218);
+    background-color: rgba(63, 11, 11, 0.9);
+    color: rgb(175, 79, 79);
     font-weight: 600;
 }
 
@@ -280,7 +280,7 @@ footer {
     color: rgb(136, 146, 176);
 }
 
-.copyright-left {
+.copyright {
     position: absolute;
     left: -380px;
 }
@@ -371,12 +371,6 @@ footer {
 
 .project-link * {
     text-decoration: none;
-}
-
-.link-arrow {
-    font-size: 16px;
-    color: rgb(136, 146, 176);
-    transition: 0.25s;
 }
 
 .project-link:hover .link-arrow {
