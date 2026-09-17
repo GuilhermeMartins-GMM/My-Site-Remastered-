@@ -70,10 +70,15 @@ body {
     width: var(--sidebar-w);
     height: 100vh;
     padding: 60px 0 60px 60px;
-    justify-content: flex-start;
-    gap: 60px;
+    justify-content: center;
     background: transparent;
     z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    left: 60px;
 }
 
 .logo a {
@@ -151,41 +156,6 @@ main {
 
 .hero .desc {
     max-width: 500px;
-    margin-bottom: 30px;
-}
-
-.buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn {
-    padding: 12px 20px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: 0.25s;
-}
-
-.btn.primary {
-    color: var(--navy);
-    background: var(--green);
-}
-
-.btn.primary:hover {
-    background: rgb(67, 217, 184);
-    transform: translateY(-3px);
-}
-
-.btn.secondary {
-    color: var(--green);
-    border: 1px solid var(--green);
-}
-
-.btn.secondary:hover {
-    background: rgba(100, 255, 218, 0.08);
-    transform: translateY(-3px);
 }
 
 .content-section {
@@ -346,6 +316,13 @@ footer {
         padding: 20px;
         flex-direction: row;
         border-bottom: 1px solid var(--border);
+        justify-content: flex-start;
+    }
+
+    .logo {
+        position: relative;
+        top: auto;
+        left: auto;
     }
 
     .sidebar nav {
