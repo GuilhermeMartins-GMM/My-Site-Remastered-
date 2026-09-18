@@ -50,7 +50,7 @@
     <main>
 
         <section id="home" class="hero">
-            <p class="accent"> HI THERE, MY NAME IS</p>
+            <p class="accent"> HELLO, MY NAME IS</p>
             <h1>Guilherme<br><span>Martins de Magalhães.</span></h1>
             <h2>A competitive programmer and chemistry enthusiast.</h2>
             <p class="desc">I'm testing my programming skills beyond just solving problems.</p>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="side-info">
                     <div><span class="accent sm-text">STATUS</span><strong>Learning</strong></div>
-                    <div><span class="accent sm-text">FOCUS</span><strong>Algorithms/Chemistry</strong></div>
+                    <div><span class="accent sm-text">FOCUS</span><strong>Algorithms<br>Chemistry</strong></div>
                     <div><span class="accent sm-text">BASED IN</span><strong>Brazil 🇧🇷</strong></div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                         <p class="accent sm-text">GAME</p>
                         <h3>Guess the Number</h3>
                         <p class="desc">The number is between <strong>1 and 1000</strong>.</p>
-                        <div class="tags"><span>JavaScript</span><span>Logic</span></div>
+                        <div class="tags"><span>JavaScript</span><span>Logic</span><span>HardWork</span></div>
                         <div class="game-controls">
                             <input type="number" id="guess" min="1" max="1000" placeholder="Your guess">
                             <button id="guessButton" onclick="check()">Guess</button>
@@ -146,7 +146,6 @@
         </section>
 
         <footer class="sm-text">
-            <span class="copyright">Designed and built by GMM</span>
             <div class="footer-links">
                 <a href="https://github.com/GuilhermeMartins-GMM" target="_blank">GitHub</a>
                 <a href="https://instagram.com/_gui_mm_/" target="_blank">Instagram</a>
@@ -181,7 +180,7 @@
             var guess = Number(document.getElementById("guess").value);
 
             if (guess < 1 || guess > 1000) {
-                document.getElementById("result").textContent = "Between 1 and 1000";
+                document.getElementById("result").textContent = "Serious?";
                 return;
             }
 
