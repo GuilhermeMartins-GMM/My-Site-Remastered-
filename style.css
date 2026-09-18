@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(249, 244, 255);
+    background-color: rgb(250, 246, 255);
     color: rgb(18, 5, 31);
 }
 
@@ -24,7 +24,7 @@ footer,
 }
 
 .accent {
-    color: rgb(121, 101, 157);
+    color: rgb(61, 26, 121);
 }
 
 .accent2 {
@@ -38,11 +38,11 @@ footer,
 }
 
 .spotlight {
-    background: radial-gradient(circle, rgba(100, 250, 255, 0.1) 0%, transparent 80%);
+    background: radial-gradient(circle, rgba(51, 112, 114, 0.08) 0%, transparent 80%);
 }
 
 .project-card {
-    background: rgb(205, 223, 224);
+    background: rgba(67, 74, 74, 0.5);
     border-color: rgba(170, 142, 205, 0.1);
 }
 
