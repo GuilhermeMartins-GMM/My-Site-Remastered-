@@ -42,7 +42,7 @@ footer,
 }
 
 .project-card {
-    background: rgb(225, 221, 230);
+    background: rgb(254, 252, 255);
     border-color: rgba(170, 142, 205, 0.1);
 }
 
@@ -52,7 +52,7 @@ footer,
 
 .tags span {
     color: rgb(21, 6, 36);
-    background: rgba(90, 87, 94, 0.1);
+    background: rgba(115, 102, 130, 0.1);
 }
 
 #guessgame {
