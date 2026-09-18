@@ -42,7 +42,7 @@ footer,
 }
 
 .project-card {
-    background: rgba(208, 255, 255, 0.9);
+    background: rgb(225, 221, 230);
     border-color: rgba(170, 142, 205, 0.1);
 }
 
@@ -171,7 +171,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 230px;
-    padding-bottom: 125px;
+    padding-bottom: 130px;
 }
 
 .hero h1 {
