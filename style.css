@@ -102,7 +102,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 130px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .hero h1 {
@@ -299,24 +299,44 @@ footer {
     color: rgb(200, 120, 255);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
     .spotlight {
         display: none;
     }
 
     .sidebar {
         position: relative;
+        top: auto;
+        left: auto;
+
         width: 100%;
         height: auto;
-        padding: 20px;
+        min-height: 0;
+
+        padding: 20px 25px;
+
+        display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: flex-start;
+
+        z-index: 100;
     }
 
     .logo {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: static;
+        margin: 0;
+    }
+
+    .logo a {
+        font-size: 28px;
     }
 
     .sidebar nav {
@@ -324,35 +344,149 @@ footer {
     }
 
     main {
+        width: 100%;
+        max-width: 100%;
         margin-left: 0;
         padding: 0 25px;
     }
 
     .hero {
-        padding-top: 60px;
+        padding-top: 55px;
+        padding-bottom: 40px;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: clamp(36px, 10vw, 45px);
+        line-height: 1.1;
     }
 
-    .grid-2col, .project-card {
-        grid-template-columns: 1fr;
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero .desc {
+        max-width: 100%;
+    }
+
+    .content-section {
+        padding: 40px 0;
+    }
+
+    .grid-2col {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .large-text {
+        font-size: 17px;
     }
 
     .side-info {
-        padding-top: 10px;
+        padding-top: 0;
+    }
+
+    .list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .projects-container {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .project-link {
+        display: block;
+        width: 100%;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        padding: 25px;
+
+        border-radius: 25px;
+        gap: 10px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    #guessgame {
+        width: 100%;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    .game-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #guessgame input {
+        width: 120px;
+        max-width: 100%;
     }
 
     footer {
+        width: 100%;
+        padding: 40px 0;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: flex-start;
         gap: 15px;
     }
 
-    .copyright-left {
-        position: relative;
-        left: auto;
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar {
+        padding: 18px 16px;
+    }
+
+    .logo a {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .game-controls {
+        flex-direction: column;
+    }
+
+    #guessgame input,
+    #guessgame button {
+        width: 100%;
+        max-width: none;
     }
 }
 
