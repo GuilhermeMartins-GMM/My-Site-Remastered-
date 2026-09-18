@@ -20,11 +20,11 @@ body {
 footer,
 .footer-links a,
 .link {
-    color: rgb(51, 55, 66);
+    color: rgb(76, 82, 99);
 }
 
 .accent {
-    color: rgb(42, 19, 84);
+    color: rgb(121, 101, 157);
 }
 
 .accent2 {
@@ -38,16 +38,16 @@ footer,
 }
 
 .spotlight {
-    background: radial-gradient(circle, rgba(170, 100, 255, 0.08) 0%, transparent 80%);
+    background: radial-gradient(circle, rgba(149, 100, 255, 0.1) 0%, transparent 80%);
 }
 
 .project-card {
-    background: rgb(92, 85, 106);
+    background: rgb(200, 193, 215);
     border-color: rgba(170, 142, 205, 0.1);
 }
 
 .project-card:hover {
-    border-color: rgba(180, 100, 255, 0.3);
+    border-color: rgba(210, 162, 255, 0.3);
 }
 
 .tags span {
