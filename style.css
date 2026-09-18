@@ -101,7 +101,7 @@ main {
 .hero {
     display: flex;
     flex-direction: column;
-    padding-top: 130px;
+    padding-top: 165px;
     padding-bottom: 100px;
 }
 
