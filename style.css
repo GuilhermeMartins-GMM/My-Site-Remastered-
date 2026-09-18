@@ -101,8 +101,8 @@ main {
 .hero {
     display: flex;
     flex-direction: column;
-    padding-top: 165px;
-    padding-bottom: 100px;
+    padding-top: 190px;
+    padding-bottom: 110px;
 }
 
 .hero h1 {
@@ -131,7 +131,7 @@ main {
 }
 
 .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .section-title h2 {
@@ -148,7 +148,7 @@ main {
 .large-text {
     color: rgb(242, 240, 252);
     font-size: 19px;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
 }
 
 .side-info {
