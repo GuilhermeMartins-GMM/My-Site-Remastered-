@@ -17,7 +17,7 @@ body {
 }
 
 .accent {
-    color: rgb(212, 54, 54);
+    color: rgb(255, 66, 66);
 }
 
 .accent2 {
@@ -209,8 +209,8 @@ main {
 }
 
 .tags span {
-    color: rgb(255, 193, 193);
-    background: rgba(212, 54, 54, 0.1);
+    color: rgb(248, 238, 255);
+    background: rgba(255, 60, 60, 0.15);
     padding: 4px 8px;
     font-size: 12px;
     border-radius: 25px;
